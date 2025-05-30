@@ -1,6 +1,6 @@
 - name: variables
   hosts: frontend
-  connections: local
+  connection: local
   vars:
   COURSE: ansible
   TRAINER: siva
