@@ -2,11 +2,11 @@
   hosts: frontend
   connection: local
   vars:
-  COURSE: ansible
-  TRAINER: siva
-  DURATION: 10H
+    COURSE: ansible
+    TRAINER: siva
+    DURATION: 10H
 
-  Tasks:
+  tasks:
     - name: print course information
       ansible.builtin.debug:
       msg: "Hello {{course}}, couserse duration {{DURATION}}, trainer is {{TRAINER}}"
